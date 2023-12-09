@@ -4,7 +4,7 @@
 # Copyright (C) 2022 The OrangeFox Recovery Project
 #
 
-DEVICE_PATH := device/google/redfin
+DEVICE_PATH := device/google/bramble 
 
 # fscrypt policy
 TW_USE_FSCRYPT_POLICY := 2
