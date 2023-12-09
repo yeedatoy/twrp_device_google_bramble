@@ -3,7 +3,7 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/twrp_redfin.mk
+    $(LOCAL_DIR)/twrp_bramble.mk
 
 COMMON_LUNCH_CHOICES := \
-    twrp_redfin-eng
+    twrp_bramble-eng
