@@ -4,7 +4,7 @@
 # Copyright (C) 2022 The OrangeFox Recovery Project
 #
 
-DEVICE_PATH := device/google/redfin
+DEVICE_PATH := device/google/bramble 
 
 # For building with minimal manifest
 ALLOW_MISSING_DEPENDENCIES := true
@@ -38,7 +38,7 @@ TARGET_2ND_CPU_VARIANT_RUNTIME := cortex-a76
 DEXPREOPT_GENERATE_APEX_IMAGE := true
 
 # Bootloader
-TARGET_BOOTLOADER_BOARD_NAME := redfin
+TARGET_BOOTLOADER_BOARD_NAME := bramble 
 TARGET_NO_BOOTLOADER := true
 
 # Display
@@ -56,8 +56,8 @@ BOARD_MKBOOTIMG_ARGS += --ramdisk_offset $(BOARD_RAMDISK_OFFSET)
 BOARD_MKBOOTIMG_ARGS += --tags_offset $(BOARD_KERNEL_TAGS_OFFSET)
 BOARD_KERNEL_IMAGE_NAME := Image
 BOARD_INCLUDE_DTB_IN_BOOTIMG := true
-TARGET_KERNEL_CONFIG := redfin_defconfig
-TARGET_KERNEL_SOURCE := kernel/google/redfin
+TARGET_KERNEL_CONFIG := bramble_defconfig
+TARGET_KERNEL_SOURCE := kernel/google/bramble 
 
 # Kernel - prebuilt
 TARGET_PREBUILT_KERNEL := $(DEVICE_PATH)/prebuilt/Image
